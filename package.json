@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run check && parcel src/index.html",
+    "build": "npm run format && npm run lint && parcel src/index.html",
     "format": "prettier-eslint --write '**/*.js'",
+    "lint": "eslint src",
     "precommit": "lint-staged"
   },
   "lint-staged": {
